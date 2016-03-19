@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>new Trema</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="../core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <!--link rel="stylesheet" media="screen" href="../themes/style/web-2.0.css"-->
+  <link rel="stylesheet" href="../themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <!--link rel="stylesheet" media="screen" href="../themes/transition/horizontal-slide.css"-->
+  <link rel="stylesheet" media="screen" href="../themes/transition/fade.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="../modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h1>新Tremaのご紹介</h1>
+    </section>
+
+    <section class="slide">
+      <center>
+        <table>
+          <tr>
+            <td><br><br><br><br><br><br><br><br></td>
+          </tr>
+          <tr>
+            <td align="center"><pre>この発表は個人的な物で仕事や所属等とは関係ありません。<br><br>また、誤記や間違い等あればご指摘頂けると助かります。</pre>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </section>
+
+    <section class="slide">
+      <h2>自己紹介</h2>
+      <div align="center">
+        <table>
+          <tr>
+            <td width=40%>
+              <img src="./image-10.jpeg" width=400>
+            </td>
+            <td width=60%>
+              <ul>
+                <li>名前 : <strong>ぶっさき　まさひろ</strong></li>
+                <li>職業 : <strong>ソフトウェア技術者</strong></li>
+                  <ul>
+                    <li>ネットワークSI</li>
+                    <li>ネットワーク監視ツール開発</li>
+                    <li>ネットワークプロトコル実装</li>
+                    <li>デバイスドライバー開発</li>
+                    <li>ルーター開発</li>
+                  </ul>
+                <li>言語 : <strong>C / C++ / Python / JAVA / <font color="red">Ruby</font></strong></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--div align="right" valign="bottom">
+        <p>NN,言語</p>
+      </div-->
+    </section>
+
+    <section class="slide">
+      <h1>Trema?</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Tremaとは</h2>
+      <blockquote cite="https://github.com/trema/trema">
+        <p>Trema is an OpenFlow controller programming framework that provides everything needed to create OpenFlow controllers in Ruby.</p>
+        <p><cite>GitHub - trema/trema</cite></p>
+      </blockquote>
+      <p><a href="https://github.com/trema/trema">Trema</a>は、RubyでOpenFlow/SDNコントローラーを作成するためのフレームワーク</p>
+    </section>
+
+    <!-- section class="slide">
+      <h2>Tremaとは</h2>
+      <blockquote>
+      </blockquote>
+        <div align="right" valign="bottom">
+        </div>
+    </section-->
+
+    <section class="slide">
+      <h1>OpenFlow/SDN?</h1>
+    </section>
+
+    <section class="slide">
+      <h2>SDNとは</h2>
+      <blockquote cite="http://www.opennetworking.org/ja/">
+        <p>SDNはネットワーク制御機能とデータ転送機能が分離し、プログラムによりネットワークの制御が実現できる、新しいアプローチのネットワークです。</p>
+        <p><cite>ONF - OPEN NETWORKING FOUNDATION</cite></p>
+      </blockquote>
+    </section>
+
+    <section class="slide">
+      <h2>OpenFlowとは</h2>
+      <blockquote cite="https://www.opennetworking.org">
+        <p>OpenFlow is the first standard communications interface defined between the control and forwarding layers of an SDN architecture.</p>
+        <p><cite>ONF - OPEN NETWORKING FOUNDATION</cite></p>
+      </blockquote>
+      <p>OpenFlowは制御モジュールと転送モジュール間の通信インタフェースの定義で、SDNの最初の規格です。</p>
+    </section>
+
+    <!--section class="slide">
+      <h2>OpenFlowとは</h2>
+      <blockquote>
+        <p>OpenFlowは制御モジュールと転送モジュール間の通信インタフェースを定義したSDNの最初の規格です。</p>
+      </blockquote>
+    </section-->
+
+    <section class="slide">
+      <h2>Legacy</h2>
+        <table>
+          <tr>
+            <td width=45%><img src="./SDN1.png" width=80%></td>
+            <td width=55%>
+              <ul>
+                <li>モジュール<br>「転送モジュール」「制御モジュール」ともネットワーク機器上で動作</li>
+                <li>経路<br>ネットワーク機器がネットワークプロトコルで経路情報を収集し、経路計算する</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+      <h2>OpenFlow/SDN</h2>
+        <table>
+          <tr>
+            <td width=45%><img src="./SDN2.png" width=80%></td>
+            <td width=55%>
+              <ul>
+                <li>モジュール<br>「制御モジュール」をネットワーク機器から分離し、コントローラーで動作</li>
+                <li>経路<br>OpenFlow/SDNコントローラーがネットワークトポロジーを把握し、経路計算する</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+    </section>
+
+    <section class="slide">
+      <h1>変化</h1>
+    </section>
+
+    <section class="slide">
+      <h2>ネットワーク</h2>
+      <div>
+        <p>ネットワークをフロー単位で動的に制御することが可能となった。 </p>
+        <ul>
+          <li>ネットワークリソースの有効活用<BR>
+              例) SD-WAN</li>
+          </li>
+          <li>ネットワークの運用管理の自動化<BR>
+              例) DDoS遮断</li>
+        </ul>
+      </div>
+      <div class="slide">
+        <p>結果</p>
+        <center><table><tr><td><font size=+5><pre>コストダウン(時間・お金)</pre></font></td></tr></table></center>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>エンジニア</h2>
+      <blockquote cite="http://www.atmarkit.co.jp/ait/articles/1602/26/news008.html">
+        <p>ネットワークが専門ではなかったのに、気が付けばネットワークの世界に足を踏み入れていた</p>
+        <p><cite>@IT - SDN時代の幕開け(1)</cite></p>
+      </blockquote>
+      <ul>
+        <li>Legacy：<br>サーバー、ストレージ、ネットワーク毎にそれぞれエンジニアが設計・運用。</li>
+        <li>SDN：<br>オーケストレーターのもとで、サーバー(SDI)、ストレージ(SDS)と連携して動作</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>開発者</h2>
+      <div align=right>
+        <p>...きっと何かが変わる</p>
+      </div>
+      <div align=center class="slide">
+        <table>
+          <tr><td><font size=+5><pre>IoT時代の幕開け</pre></font></td></tr>
+        </table>
+      </div>
+      <div align=center class="slide">
+        <!--p><BR><BR></p-->
+        <!--p>個別最適　⇒　サーバー最適配置　⇒　アプリ最適配置</p-->
+        <table>
+          <tr>
+            <td align=center width=30%>Legacy</td>
+            <td align=center width=5%></td>
+            <td align=center width=30%>SDx</td>
+            <td align=center width=5%></td>
+            <td align=center width=30%>IoT</td>
+          </tr>
+          <tr>
+            <td align=center width=30%>個別最適</td>
+            <td align=center width=5%>⇒</td>
+            <td align=center width=30%>サーバー最適配置</td>
+            <td align=center width=5%>⇒</td>
+            <td align=center width=30%>アプリ最適配置</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+        
+    <section class="slide">
+      <h1>そこでTrema</h1>
+    </section>
+
+    <!--section class="slide">
+      <h2>新Trema</h2>
+      <div align=center>
+        <table>
+          <tr>
+            <td>
+      <ul>
+        <li>all Ruby</li>
+        <li>OpenFlow 1.3サポート</li>
+      </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section-->
+
+    <section class="slide">
+      <h1>OpenFlowの仕組み</h1>
+    </section>
+
+<section class="slide" id="OpenFlow #1">
+  <h2>パケット受信</h2>
+  <img height="640"src="./OpenFlow-1.png">
+  <!--img src="./OpenFlow-1.png"-->
+</section>
+
+<section class="slide" id="OpenFlow #2">
+  <h2>FDB参照</h2>
+  <img height="640"src="./OpenFlow-2.png">
+  <!--img src="./OpenFlow-2.png"-->
+</section>
+
+<section class="slide" id="OpenFlow #3">
+  <h2>OFCに問い合わせ</h2>
+  <img height="640"src="./OpenFlow-3.png">
+  <!--img src="./OpenFlow-3.png"-->
+</section>
+
+<section class="slide" id="OpenFlow #4">
+  <h2>処理方法計算</h2>
+  <img height="640"src="./OpenFlow-4.png">
+  <!--img src="./OpenFlow-4.png"-->
+</section>
+
+<section class="slide" id="OpenFlow #5">
+  <h2>フロー登録</h2>
+  <img height="640"src="./OpenFlow-5.png">
+  <!--img src="./OpenFlow-5.png"-->
+</section>
+
+<section class="slide" id="OpenFlow #6">
+  <h2>パケット転送</h2>
+  <img height="640"src="./OpenFlow-6.png">
+  <!--img src="./OpenFlow-6.png"-->
+</section>
+
+    <section class="slide">
+      <h1>プログラム</h1>
+    </section>
+
+    <section class="slide">
+      <h2>learning switch</h2>
+      <p>ソースコード：<a href="https://github.com/trema/learning_switch">https://github.com/trema/learning_switch</a></p>
+      <img src="./lsw4.jpg" width="100%">
+    </section>
+
+    <section class="slide">
+      <h2>learning switch</h2>
+      <pre>
+require 'fdb'
+
+# An OpenFlow controller that emulates an ethernet switch.
+class LearningSwitch < Trema::Controller
+  timer_event :age_fdb, interval: 5.sec
+
+  def start(_argv)
+    @fdb = FDB.new
+    logger.info "#{name} started."
+  end
+      </pre>
+      <p>起動時に呼ばれる start ハンドラでFDBのインスタンス変数を作成。</p>
+    </section>
+
+    <section class="slide">
+      <h2>learning switch</h2>
+      <p>参考：fdb</p>
+      <img src="./lsw4.jpg" width="100%">
+    </section>
+
+    <section class="slide">
+      <h2>learning switch</h2>
+      <pre>
+  def switch_ready(datapath_id)
+    # Drop BPDU frames
+    send_flow_mod_add(
+      datapath_id,
+      priority: 100,
+      match: Match.new(destination_mac_address: '01:80:C2:00:00:00')
+    )
+  end</pre>
+      <p>宛先 MAC アドレス「01:80:C2:00:00:00」のパケットを落とすフローエントリをスイッチに登録。</p>
+    </section>
+
+    <section class="slide">
+      <h2>learning switch</h2>
+      <pre>
+  def packet_in(_datapath_id, packet_in)
+    @fdb.learn packet_in.source_mac, packet_in.in_port
+    flow_mod_and_packet_out packet_in
+  end
+
+  def flow_mod_and_packet_out(packet_in)
+    port_no = @fdb.lookup(packet_in.destination_mac)
+    flow_mod(packet_in, port_no) if port_no
+    packet_out(packet_in, port_no || :flood)
+  end</pre>
+      <p>パケットの送信元MACアドレスとパケットを受信したポート番号をFDB に登録(@fdb.learn)<BR>
+         パケットの宛先MACアドレスからパケットの送信をポート番号を検索(@fdb.lookup)<BR>
+         パケットの転送フローエントリーをスイッチに登録。<BR>
+         packet_inでコントローラーに転送されてきたパケットを転送</p>
+    </section>
+
+    <!-- section class="slide">
+      <h2>learning switch</h2>
+      <pre>
+  def age_fdb
+    @fdb.age
+  end
+
+  private
+
+      </pre>
+    </section -->
+
+    <section class="slide">
+      <h2>learning switch</h2>
+      <pre>
+  def flow_mod(packet_in, port_no)
+    send_flow_mod_add(
+      packet_in.datapath_id,
+      match: ExactMatch.new(packet_in),
+      actions: SendOutPort.new(port_no)
+    )
+  end
+
+  def packet_out(packet_in, port_no)
+    send_packet_out(
+      packet_in.datapath_id,
+      packet_in: packet_in,
+      actions: SendOutPort.new(port_no)
+    )
+  end</pre>
+    </section>
+
+    <section class="slide">
+      <h1>最後に</h1>
+    </section>
+
+    <section class="slide">
+      <h2>新Tremaリリース</h2>
+      <p>変更点</p>
+      <ul>
+        <li>all Ruby</li>
+        <li>OpenFlow1.3対応</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>新Trema本リリース</h2>
+      <a href="http://gihyo.jp/book/2016/978-4-7741-7983-4"><img src=./newTrema.jpg></a>
+    </section>
+
+    <section class="slide">
+      <center>
+        <table>
+          <tr>
+            <td><br><br><br><br><br><br><br><br></td>
+          </tr>
+          <tr>
+            <td><font size=+5><pre>ご清聴ありがとうございました</pre></font></td>
+          </tr>
+        </table>
+      </center>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="../jquery.min.js"></script>
+<script src="../core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../xtensions/navigation/deck.navigation.js"></script>
+<script src="../xtensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
